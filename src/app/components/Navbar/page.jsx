@@ -35,13 +35,13 @@ const Navbar = () => {
 
                         <div className="w-5/8">
                             <ul className="flex md:gap-5 lg:gap-10 justify-left items-center">
-                                <li><Link href="/about" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">About</Link></li>
-                                <li><Link href="#features" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Benefits</Link></li>
-                                <li><Link href="#integrations" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Integrations</Link></li>
-                                <li><Link href="#compliance" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Compliance</Link></li>
-                                <li><Link href="/careers" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Careers</Link></li>
-                                <li><Link href="/faq" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">FAQ</Link></li>
-                                <li><Link href="/resources" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Resources</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">About</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Benefits</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Integrations</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Compliance</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Careers</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">FAQ</Link></li>
+                                <li><Link href="/" className="md:text-[12px] lg:text-[16px] text-[#383838] hover:text-[#0045F2] font-medium tracking-tight transition-colors duration-200">Resources</Link></li>
                             </ul>
                         </div>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
                                         <li>
                                             <Link
                                                 onClick={toggleMenu}
-                                                href="/about"
+                                                href="/"
                                                 className="text-2xl text-[#383838] font-semibold hover:text-[#0045F2] transition-colors"
                                             >
                                                 About
@@ -102,7 +102,7 @@ const Navbar = () => {
                                         <li>
                                             <Link
                                                 onClick={toggleMenu}
-                                                href="#features"
+                                                href="/"
                                                 className="text-2xl text-[#383838] font-semibold hover:text-[#0045F2] transition-colors"
                                             >
                                                 Benefits
@@ -111,7 +111,7 @@ const Navbar = () => {
                                         <li>
                                             <Link
                                                 onClick={toggleMenu}
-                                                href="#integrations"
+                                                href="/"
                                                 className="text-2xl text-[#383838] font-semibold hover:text-[#0045F2] transition-colors"
                                             >
                                                 Integrations
@@ -120,7 +120,7 @@ const Navbar = () => {
                                         <li>
                                             <Link
                                                 onClick={toggleMenu}
-                                                href="/careers"
+                                                href="/"
                                                 className="text-2xl text-[#383838] font-semibold hover:text-[#0045F2] transition-colors"
                                             >
                                                 Careers
@@ -129,7 +129,7 @@ const Navbar = () => {
                                         <li>
                                             <Link
                                                 onClick={toggleMenu}
-                                                href="/faq"
+                                                href="/"
                                                 className="text-2xl text-[#383838] font-semibold hover:text-[#0045F2] transition-colors"
                                             >
                                                 FAQ
