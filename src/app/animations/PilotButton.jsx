@@ -52,7 +52,7 @@ const PilotButton = () => {
     };
 
     return (
-        <div className="flex items-center gap-3 mt-6">
+        <div className="flex items-center gap-3 md:mt-6">
             <motion.button
                 initial="rest"
                 whileHover="hover"
