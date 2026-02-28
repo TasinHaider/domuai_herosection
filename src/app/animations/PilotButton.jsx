@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 
 const PilotButton = () => {
-    // Animation Variants: Senior Level Logic
+
+    //Variants
     const variants = {
         bg: {
             rest: {
@@ -28,11 +29,12 @@ const PilotButton = () => {
                 transition: { duration: 0.4, ease: [0.19, 1, 0.22, 1] }
             }
         },
-        // Label Slide Logic
+        
+        //Label Slide
         text: {
             rest: { y: 0, opacity: 1 },
             hover: {
-                y: -40, // Slides up and out
+                y: -40,
                 opacity: 0,
                 transition: { duration: 0.3, ease: [0.19, 1, 0.22, 1] }
             }
@@ -40,7 +42,7 @@ const PilotButton = () => {
         textIn: {
             rest: { y: 0, opacity: 0 },
             hover: {
-                y: 0, // Slides in from bottom
+                y: 0,
                 opacity: 1,
                 transition: { duration: 0.3, delay: 0.1, ease: [0.19, 1, 0.22, 1] }
             }
@@ -57,29 +59,24 @@ const PilotButton = () => {
                 initial="rest"
                 whileHover="hover"
                 animate="rest"
-
                 className="relative group flex items-center gap-2 bg-[#3448FF] pl-5 pr-1.5 py-0.5 font-bold overflow-hidden border-[1px] border-transparent transition-all duration-300 hover:border-[#3448FF] active:scale-[0.97]"
-                style={{ borderRadius: '6px' }}
-            >
+                style={{ borderRadius: '6px' }} >
 
                 <motion.div
                     variants={variants.bg}
-                    className="absolute z-10 pointer-events-none"
-                />
+                    className="absolute z-10 pointer-events-none" />
 
                 {/* 2. Masked Label Container */}
                 <div className="relative z-20 h-10 overflow-hidden flex flex-col justify-center">
                     <motion.span
                         variants={variants.text}
-                        className="text-[14px] text-white tracking-tight"
-                    >
+                        className="text-[14px] text-white tracking-tight">
                         Start a Pilot
                     </motion.span>
 
                     <motion.span
                         variants={variants.textIn}
-                        className="absolute text-[14px] text-[#3448FF] tracking-tight"
-                    >
+                        className="absolute text-[14px] text-[#3448FF] tracking-tight" >
                         Start a Pilot
                     </motion.span>
                 </div>
@@ -89,8 +86,7 @@ const PilotButton = () => {
                     <motion.div
                         variants={variants.icon}
                         transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                        className="flex items-center justify-center"
-                    >
+                        className="flex items-center justify-center" >
                         <FiArrowRight size={14} strokeWidth={3} />
                     </motion.div>
                 </div>

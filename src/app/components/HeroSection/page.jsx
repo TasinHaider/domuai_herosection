@@ -8,16 +8,14 @@ import PilotButton from '@/app/animations/PilotButton';
 const HeroSection = () => {
     return (
         <section className='min-h-screen w-full grid grid-cols-1 lg:grid-cols-2 items-stretch bg-transparent overflow-hidden font-inter'>
-
-            {/* LEFT SIDE: Content Alignment with .container */}
+            {/* LEFT SIDE */}
             <div className='flex items-center justify-end pt-20 md:pt-25 lg:pt-0'>
                 <div className='container !max-w-[768px] !mr-0 !ml-auto flex flex-col justify-center px-6 lg:px-12 lg:pr-20'>
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                        className='flex flex-col gap-6'
-                    >
+                        className='flex flex-col gap-6' >
                         {/* YC Badge */}
                         <div className='flex w-fit gap-2.5 items-center bg-white px-3 py-1.5 rounded-full shadow-sm'>
                             <Image src={ylogo} alt="YC" width={18} height={18} />
@@ -42,20 +40,18 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            {/* RIGHT SIDE: Full Viewport Visual */}
+            {/* RIGHT SIDE */}
             <div className='flex items-center justify-start overflow-hidden pt-10 md:pt-15 lg:pt-0'>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.2 }}
-                    className='w-full h-full min-h-[500px] lg:min-h-screen'
-                >
+                    className='w-full h-full min-h-[500px] lg:min-h-screen' >
                     <iframe
                         src="https://my.spline.design/3dglassherobg-dnzlBF8PzDDcIFvm5c2HMF94/"
                         className="w-full h-full pointer-events-none scale-110 lg:scale-[1.4] transform-origin-left"
                         style={{ border: 'none' }}
-                        title="Hero 3D Visual"
-                    />
+                        title="Hero 3D Visual" />
                 </motion.div>
             </div>
         </section>
